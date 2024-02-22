@@ -1,6 +1,4 @@
-package basics
-
-import com.sun.org.apache.bcel.internal.classfile.JavaClass
+package fancy
 
 class InlineExample {
     companion object {

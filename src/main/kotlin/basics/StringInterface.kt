@@ -1,8 +1,8 @@
 package basics
 
 // StringInterface: no constructor
-interface StringInterface {
-    var string: String
+// Create the interface StringInterface
 
-    fun printStringNTimes(n: Int)
-}
+    // Add a property string
+
+    // Add a function printStringNTimes
