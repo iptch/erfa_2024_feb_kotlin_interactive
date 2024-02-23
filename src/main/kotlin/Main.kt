@@ -234,7 +234,6 @@ fun main(args: Array<String>) {
 
     // Use .let to add 1000 to the nullObject.nullInt parameter and print afterward the new number to the console using
     // also
-    println(nullObject.let { it.nullInt?.plus(1000) ?: -1 }.also { println("We calculated a new number $it") })
 
 
 
