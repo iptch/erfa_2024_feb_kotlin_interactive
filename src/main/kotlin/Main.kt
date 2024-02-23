@@ -160,7 +160,7 @@ fun main(args: Array<String>) {
 
     // Create an instance of the IntAndString class
 
-    //println("The sampelIntString contains the number ${sampleIntString.number} and string ${sampleIntString.string}")
+    //println("The sampleIntString contains the number ${sampleIntString.number} and string ${sampleIntString.string}")
 
     // -- Interface : See the StringInterface (StringInterface.kt)
     // Create a StringAndInt class which implements the StringInterface
@@ -196,7 +196,7 @@ fun main(args: Array<String>) {
     //------------------------------------------------------------------------------------------------------------------
 
     // Extension functions ---------------------------------------------------------------------------------------------
-    // Extend the PersonExampleClass with a function that maps the name to the email address
+    // Extend the PersonExampleClass with a function that maps the personId to the email address
 
     //println("The email of ${bob.firstName} is ${bob.mapIdToEmail()[bob.personId]}")
 
@@ -232,7 +232,7 @@ fun main(args: Array<String>) {
     // --Scope functions
     // Apply: change the string parameter of the nullObject and print it to the console
 
-    // Use .let to add 1000 to the nullObject.nullInt parameter and print afterwards the new number to the console using
+    // Use .let to add 1000 to the nullObject.nullInt parameter and print afterward the new number to the console using
     // also
     println(nullObject.let { it.nullInt?.plus(1000) ?: -1 }.also { println("We calculated a new number $it") })
 
@@ -240,7 +240,10 @@ fun main(args: Array<String>) {
 
     // Infix functions -------------------------------------------------------------------------------------------------
     // Create a class Assertion which takes a generic target.
-    // Provide a infix function isDifferentFrom(other: T) which compares two objects
+    // Provide an infix function isDifferentFrom(other: T) which compares two objects
+    class Assertion<T>(private val target: T) {
+
+    }
 
     //val a1 = Assertion(1)
     //println("a1 is different from 2? ${a1 isDifferentFrom 2 }")
